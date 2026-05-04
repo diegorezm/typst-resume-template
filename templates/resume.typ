@@ -1,11 +1,11 @@
 #import "../shared/helpers.typ": contact-row
-#import "../shared/tema.typ": setup-page, muted-color
+#import "../shared/theme.typ": setup-page, muted-color
 
 // The content file is passed via --input file=resumes/name.yaml
-#let profile = yaml("../shared/perfil.yaml")
+#let profile = yaml("../shared/profile.yaml")
 #let resume  = yaml(sys.inputs.file)
 
-#setup-page()
+#show: setup-page
 
 // ── Header ────────────────────────────────────────────────────────────────────
 #align(center)[

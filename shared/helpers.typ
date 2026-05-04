@@ -3,7 +3,7 @@
 // Renders a single contact item with an icon and optional link.
 #let contact-item(icon, label, url: none, brand: false) = {
   let i = if brand {
-    fa-icon(icon, font: "Font Awesome 6 Brands")
+    fa-icon(icon, font: "Font Awesome 7 Brands")
   } else {
     fa-icon(icon)
   }
