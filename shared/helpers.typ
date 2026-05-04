@@ -1,30 +1,30 @@
 #import "@preview/fontawesome:0.6.0": *
 
-// Renderiza um item de contato com ícone e link opcional.
-#let item-contato(icone, rotulo, url: none, fonte-marca: false) = {
-  let i = if fonte-marca {
-    fa-icon(icone, font: "Font Awesome 6 Brands")
+// Renders a single contact item with an icon and optional link.
+#let contact-item(icon, label, url: none, brand: false) = {
+  let i = if brand {
+    fa-icon(icon, font: "Font Awesome 6 Brands")
   } else {
-    fa-icon(icone)
+    fa-icon(icon)
   }
   if url != none {
-    link(url)[ #i #h(0.3em) #rotulo ]
+    link(url)[ #i #h(0.3em) #label ]
   } else {
-    [ #i #h(0.3em) #rotulo ]
+    [ #i #h(0.3em) #label ]
   }
 }
 
-// Linha de contato completa gerada a partir do perfil.yaml.
-#let linha-contato(perfil) = [
-  #item-contato("envelope", perfil.email, url: "mailto:" + perfil.email)
+// Full contact row generated from profile.yaml.
+#let contact-row(profile) = [
+  #contact-item("envelope", profile.email, url: "mailto:" + profile.email)
   #h(1em)
-  #item-contato("phone", perfil.telefone)
+  #contact-item("phone", profile.phone)
   #h(1em)
-  #item-contato("location-dot", perfil.local)
+  #contact-item("location-dot", profile.location)
   #h(1em)
-  #item-contato("linkedin", perfil.linkedin.rotulo, url: perfil.linkedin.url, fonte-marca: true)
+  #contact-item("linkedin", profile.linkedin.label, url: profile.linkedin.url, brand: true)
   #h(1em)
-  #item-contato("github", perfil.github.rotulo, url: perfil.github.url, fonte-marca: true)
+  #contact-item("github", profile.github.label, url: profile.github.url, brand: true)
   #h(1em)
-  #item-contato("globe", perfil.website.rotulo, url: perfil.website.url)
+  #contact-item("globe", profile.website.label, url: profile.website.url)
 ]

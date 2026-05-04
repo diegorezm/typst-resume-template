@@ -1,10 +1,10 @@
-// Configurações visuais globais: margens, fontes, cores e estilos de cabeçalho.
-// Edite este arquivo para mudar o visual de todos os currículos de uma vez.
+// Global visual settings: margins, fonts, colors, and heading styles.
+// Edit this file to change the look of all resumes at once.
 
-#let cor-destaque = rgb("#2563EB")  // azul
-#let cor-secundaria = rgb("#64748B") // cinza
+#let accent-color = rgb("#2563EB")   // blue
+#let muted-color  = rgb("#64748B")   // gray
 
-#let configurar-pagina() = {
+#let setup-page() = {
   set page(
     paper: "a4",
     margin: (x: 1.4cm, y: 1.2cm),
@@ -12,19 +12,19 @@
   set text(
     font: "Linux Libertine",
     size: 10pt,
-    lang: "pt",
+    lang: "en",
   )
   set par(justify: true, leading: 0.65em)
 
-  // Estilo dos títulos de seção
+  // Section heading style
   show heading.where(level: 1): it => [
     #v(0.6em)
-    #text(size: 11pt, weight: "bold", fill: cor-destaque)[#upper(it.body)]
-    #line(length: 100%, stroke: 0.5pt + cor-destaque)
+    #text(size: 11pt, weight: "bold", fill: accent-color)[#upper(it.body)]
+    #line(length: 100%, stroke: 0.5pt + accent-color)
     #v(0.3em)
   ]
 
-  // Estilo dos sub-títulos (empresa, cargo)
+  // Sub-heading style (company, role)
   show heading.where(level: 2): it => [
     #v(0.2em)
     #text(size: 10pt, weight: "bold")[#it.body]

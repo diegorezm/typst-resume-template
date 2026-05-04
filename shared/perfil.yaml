@@ -1,17 +1,17 @@
-# Informações pessoais compartilhadas entre todos os currículos.
-# Edite apenas este arquivo para atualizar seus dados em todos os currículos.
+# Personal information shared across all resumes.
+# Edit only this file to update your details everywhere.
 
-nome: João Silva
-titulo: Profissional
-email: joao.silva@exemplo.com
-telefone: "+55 11 98765-4321"
-local: "São Paulo, SP"
+name: John Doe
+title: Professional
+email: john.doe@example.com
+phone: "+1 (555) 123-4567"
+location: "New York, NY"
 website:
-  rotulo: "joaosilva.com.br"
-  url: "https://joaosilva.com.br"
+  label: "johndoe.com"
+  url: "https://johndoe.com"
 github:
-  rotulo: "github.com/joaosilva"
-  url: "https://github.com/joaosilva"
+  label: "github.com/johndoe"
+  url: "https://github.com/johndoe"
 linkedin:
-  rotulo: "linkedin.com/in/joaosilva"
-  url: "https://linkedin.com/in/joaosilva"
+  label: "linkedin.com/in/johndoe"
+  url: "https://linkedin.com/in/johndoe"

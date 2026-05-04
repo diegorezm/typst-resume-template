@@ -1,41 +1,41 @@
-# Currículo com foco em design gráfico e UX.
-cargo_alvo: Designer Gráfico / UI Designer
-resumo: >
-  Designer com foco em identidade visual, interfaces digitais e experiência do usuário.
-  Experiência em projetos de branding, aplicativos e materiais impressos para clientes
-  de diferentes segmentos.
+# Resume focused on graphic design and UX.
+target_role: Graphic Designer / UI Designer
+summary: >
+  Designer focused on visual identity, digital interfaces, and user experience.
+  Experience in branding, app design, and printed materials for clients across
+  different industries.
 
-habilidades:
+skills:
   - Figma
-  - Adobe Illustrator e Photoshop
-  - Identidade visual e branding
-  - Design de interfaces (UI/UX)
-  - Tipografia e hierarquia visual
-  - Prototipação e testes de usabilidade
+  - Adobe Illustrator and Photoshop
+  - Visual Identity and Branding
+  - UI/UX Design
+  - Typography and Visual Hierarchy
+  - Prototyping and Usability Testing
 
-experiencias:
-  - empresa: Estúdio Visual
-    cargo: Designer Gráfico
-    periodo: "2022 - Atual"
-    itens:
-      - Desenvolvi identidades visuais completas para 15 marcas de pequeno e médio porte.
-      - Criei interfaces para aplicativos mobile no Figma, reduzindo atrito em fluxos principais.
-      - Colaborei com equipe de marketing na produção de materiais para campanhas digitais.
+experience:
+  - company: Visual Studio
+    role: Graphic Designer
+    period: "2022 - Present"
+    items:
+      - Developed complete visual identities for 15 small and medium-sized brands.
+      - Designed mobile app interfaces in Figma, reducing friction in core user flows.
+      - Collaborated with the marketing team on digital campaign materials.
 
-  - empresa: Freelancer
-    cargo: Designer Independente
-    periodo: "2020 - 2022"
-    itens:
-      - Atendi clientes de diferentes segmentos com entregas de logotipo, apresentações e materiais impressos.
-      - Construí repositório de templates reutilizáveis que reduziram tempo de entrega em 25%.
+  - company: Freelancer
+    role: Independent Designer
+    period: "2020 - 2022"
+    items:
+      - Served clients across industries with logo design, presentations, and print materials.
+      - Built a reusable template library that reduced delivery time by 25%.
 
-projetos:
-  - nome: Redesign de App de Delivery
-    itens:
-      - Conduzi pesquisa com usuários e mapeei os principais pontos de abandono no checkout.
-      - Propus novo fluxo de compra que reduziu etapas de 7 para 4 passos.
+projects:
+  - name: Delivery App Redesign
+    items:
+      - Conducted user research and mapped the main checkout abandonment points.
+      - Proposed a new purchase flow that reduced steps from 7 to 4.
 
-formacao:
-  - curso: Tecnólogo em Design Gráfico
-    instituicao: Escola de Artes Aplicadas
-    periodo: "2018 - 2020"
+education:
+  - degree: Associate Degree in Graphic Design
+    institution: School of Applied Arts
+    period: "2018 - 2020"

@@ -1,35 +1,35 @@
-# Currículo com foco em marketing e comunicação.
-cargo_alvo: Especialista em Marketing Digital
-resumo: >
-  Profissional de marketing com experiência em gestão de redes sociais, campanhas
-  pagas e produção de conteúdo. Focado em crescimento orgânico e geração de leads
-  qualificados para empresas de pequeno e médio porte.
+# Resume focused on marketing and communications.
+target_role: Digital Marketing Specialist
+summary: >
+  Marketing professional with experience in social media management, paid
+  campaigns, and content production. Focused on organic growth and qualified
+  lead generation for small and medium-sized businesses.
 
-habilidades:
-  - Gestão de redes sociais
-  - Google Ads e Meta Ads
-  - SEO e marketing de conteúdo
+skills:
+  - Social Media Management
+  - Google Ads and Meta Ads
+  - SEO and Content Marketing
   - Copywriting
-  - Canva e Adobe Express
-  - Analytics e métricas de performance
+  - Canva and Adobe Express
+  - Analytics and Performance Metrics
 
-experiencias:
-  - empresa: Agência Criativa
-    cargo: Analista de Marketing Digital
-    periodo: "2021 - Atual"
-    itens:
-      - Gerenciei as redes sociais de 8 clientes, alcançando aumento médio de 45% no engajamento.
-      - Criei e otimizei campanhas de tráfego pago com ROI médio de 3,2x.
-      - Produzi calendários de conteúdo mensais alinhados à identidade visual de cada marca.
+experience:
+  - company: Creative Agency
+    role: Digital Marketing Analyst
+    period: "2021 - Present"
+    items:
+      - Managed social media for 8 clients, achieving an average 45% increase in engagement.
+      - Created and optimized paid traffic campaigns with an average 3.2x ROI.
+      - Produced monthly content calendars aligned with each brand's visual identity.
 
-  - empresa: Startup Moda Ltda.
-    cargo: Assistente de Comunicação
-    periodo: "2019 - 2021"
-    itens:
-      - Apoiei a equipe de marketing na produção de materiais gráficos e textuais.
-      - Contribuí para o crescimento de 60% dos seguidores no Instagram em 8 meses.
+  - company: Fashion Startup Ltd.
+    role: Communications Assistant
+    period: "2019 - 2021"
+    items:
+      - Supported the marketing team with graphic and written content production.
+      - Contributed to 60% Instagram follower growth over 8 months.
 
-formacao:
-  - curso: Bacharelado em Publicidade e Propaganda
-    instituicao: Faculdade das Comunicações
-    periodo: "2017 - 2021"
+education:
+  - degree: Bachelor of Advertising and Public Relations
+    institution: College of Communications
+    period: "2017 - 2021"

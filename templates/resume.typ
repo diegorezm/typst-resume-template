@@ -1,77 +1,77 @@
-#import "../shared/helpers.typ": linha-contato
-#import "../shared/tema.typ": configurar-pagina, cor-secundaria
+#import "../shared/helpers.typ": contact-row
+#import "../shared/tema.typ": setup-page, muted-color
 
-// O arquivo de conteúdo é passado via --input arquivo=resumes/nome.yaml
-#let perfil = yaml("../shared/perfil.yaml")
-#let resume = yaml(sys.inputs.arquivo)
+// The content file is passed via --input file=resumes/name.yaml
+#let profile = yaml("../shared/perfil.yaml")
+#let resume  = yaml(sys.inputs.file)
 
-#configurar-pagina()
+#setup-page()
 
-// ── Cabeçalho ──────────────────────────────────────────────────────────────────
+// ── Header ────────────────────────────────────────────────────────────────────
 #align(center)[
-  #text(size: 22pt, weight: "bold")[#perfil.nome]
+  #text(size: 22pt, weight: "bold")[#profile.name]
   #v(0.1em)
-  #text(size: 11pt, fill: cor-secundaria)[#resume.cargo_alvo]
+  #text(size: 11pt, fill: muted-color)[#resume.target_role]
   #v(0.4em)
-  #text(size: 8.5pt)[#linha-contato(perfil)]
+  #text(size: 8.5pt)[#contact-row(profile)]
 ]
 
 #v(0.6em)
 
-// ── Resumo ─────────────────────────────────────────────────────────────────────
-= Resumo
-#resume.resumo
+// ── Summary ───────────────────────────────────────────────────────────────────
+= Summary
+#resume.summary
 
-// ── Habilidades ────────────────────────────────────────────────────────────────
-= Habilidades
-#resume.habilidades.join(" • ")
+// ── Skills ────────────────────────────────────────────────────────────────────
+= Skills
+#resume.skills.join(" • ")
 
-// ── Experiência ────────────────────────────────────────────────────────────────
-= Experiência
-#for exp in resume.experiencias [
+// ── Experience ────────────────────────────────────────────────────────────────
+= Experience
+#for exp in resume.experience [
   #grid(
     columns: (1fr, auto),
-    align(left)[== #exp.cargo — #exp.empresa],
-    align(right)[#text(fill: cor-secundaria)[#exp.periodo]],
+    align(left)[== #exp.role — #exp.company],
+    align(right)[#text(fill: muted-color)[#exp.period]],
   )
   #v(0.15em)
-  #for item in exp.itens [
+  #for item in exp.items [
     - #item
   ]
   #v(0.3em)
 ]
 
-// ── Projetos ───────────────────────────────────────────────────────────────────
-#if "projetos" in resume [
-  = Projetos
-  #for projeto in resume.projetos [
+// ── Projects ──────────────────────────────────────────────────────────────────
+#if "projects" in resume [
+  = Projects
+  #for project in resume.projects [
     #grid(
       columns: (1fr, auto),
       align(left)[
-        == #if "link" in projeto [
-          #link(projeto.link)[#projeto.nome]
+        == #if "link" in project [
+          #link(project.link)[#project.name]
         ] else [
-          #projeto.nome
+          #project.name
         ]
       ],
       align(right)[],
     )
     #v(0.15em)
-    #for item in projeto.itens [
+    #for item in project.items [
       - #item
     ]
     #v(0.3em)
   ]
 ]
 
-// ── Formação ───────────────────────────────────────────────────────────────────
-#if "formacao" in resume [
-  = Formação
-  #for edu in resume.formacao [
+// ── Education ─────────────────────────────────────────────────────────────────
+#if "education" in resume [
+  = Education
+  #for edu in resume.education [
     #grid(
       columns: (1fr, auto),
-      align(left)[== #edu.curso — #edu.instituicao],
-      align(right)[#text(fill: cor-secundaria)[#edu.periodo]],
+      align(left)[== #edu.degree — #edu.institution],
+      align(right)[#text(fill: muted-color)[#edu.period]],
     )
     #v(0.3em)
   ]

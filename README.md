@@ -8,7 +8,6 @@ A modular resume template built with [Typst](https://typst.app/). Write your per
 - **Multiple resumes** with completely independent content
 - **Icons** via Font Awesome (email, phone, location, LinkedIn, GitHub, website)
 - **Makefile** that compiles all resumes to `output/` with one command
-- Everything written in **pt-BR** (easy to adapt to any language)
 
 ## Requirements
 
@@ -25,7 +24,7 @@ A modular resume template built with [Typst](https://typst.app/). Write your per
 │   ├── helpers.typ        ← Icon helpers and contact row
 │   └── tema.typ           ← Page settings, fonts, colors, headings
 ├── resumes/
-│   ├── geral.yaml         ← Example: general resume
+│   ├── general.yaml       ← Example: general resume
 │   ├── marketing.yaml     ← Example: marketing-focused resume
 │   └── design.yaml        ← Example: design-focused resume
 ├── templates/
@@ -49,7 +48,7 @@ All PDFs will be created inside `output/`.
 ### Compile a single resume
 
 ```bash
-make output/geral.pdf
+make output/general.pdf
 ```
 
 ### Clean generated files
@@ -62,7 +61,7 @@ make clean
 
 ### Adding a new resume
 
-1. Create a new file in `resumes/`, e.g. `resumes/vendas.yaml`.
+1. Create a new file in `resumes/`, e.g. `resumes/sales.yaml`.
 2. Fill in the fields following the structure of any existing example.
 3. Run `make` — the new PDF will appear in `output/` automatically.
 
@@ -78,14 +77,14 @@ Icon helpers are defined in `shared/helpers.typ`. If you don't use GitHub or Lin
 
 Each file in `resumes/` supports the following fields:
 
-| Campo | Descrição |
+| Field | Description |
 |---|---|
-| `cargo_alvo` | Job title shown under your name |
-| `resumo` | Short professional summary paragraph |
-| `habilidades` | List of skills shown as a single line |
-| `experiencias` | List of work experiences (see example) |
-| `projetos` | List of projects (optional) |
-| `formacao` | List of education entries (optional) |
+| `target_role` | Job title shown under your name |
+| `summary` | Short professional summary paragraph |
+| `skills` | List of skills shown as a single line |
+| `experience` | List of work experiences (see example) |
+| `projects` | List of projects *(optional)* |
+| `education` | List of education entries *(optional)* |
 
 ## License
 

@@ -3,23 +3,23 @@ TEMPLATE   := templates/resume.typ
 RESUME_DIR := resumes
 OUTPUT_DIR := output
 
-# Descobre todos os arquivos .yaml em resumes/ automaticamente
+# Auto-discovers all .yaml files in resumes/
 RESUMES := $(wildcard $(RESUME_DIR)/*.yaml)
 PDFS    := $(patsubst $(RESUME_DIR)/%.yaml,$(OUTPUT_DIR)/%.pdf,$(RESUMES))
 
 .PHONY: all clean dirs
 
-## Compila todos os currículos para output/
+## Compiles all resumes to output/
 all: dirs $(PDFS)
 
 dirs:
 	mkdir -p $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/%.pdf: $(RESUME_DIR)/%.yaml $(TEMPLATE) shared/perfil.yaml shared/helpers.typ shared/tema.typ
-	$(TYPST) compile $(TEMPLATE) $@ --input arquivo=$<
+	$(TYPST) compile $(TEMPLATE) $@ --input file=$<
 	@echo "  ✓ $@"
 
-## Remove todos os PDFs gerados
+## Removes all generated PDFs
 clean:
 	rm -rf $(OUTPUT_DIR)
-	@echo "  ✓ output/ removido"
+	@echo "  ✓ output/ removed"
