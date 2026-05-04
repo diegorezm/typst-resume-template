@@ -1,0 +1,42 @@
+# Currículo geral — adaptável para qualquer área.
+cargo_alvo: Analista de Projetos
+resumo: >
+  Profissional com experiência em gestão de projetos, relacionamento com clientes e
+  melhoria de processos. Orientado a resultados e com facilidade de adaptação a
+  diferentes contextos e equipes.
+
+habilidades:
+  - Gestão de projetos
+  - Comunicação
+  - Excel e Google Sheets
+  - Pacote Office
+  - Metodologias ágeis (Scrum, Kanban)
+  - Atendimento ao cliente
+
+experiencias:
+  - empresa: Empresa ABC
+    cargo: Analista de Projetos
+    periodo: "2022 - Atual"
+    itens:
+      - Gerenciei carteira de 12 projetos simultâneos com entrega dentro do prazo em 90% dos casos.
+      - Conduzi reuniões de alinhamento com stakeholders internos e externos.
+      - Reduzi retrabalho em 30% ao implementar checklists padronizados de entrega.
+
+  - empresa: Consultoria XYZ
+    cargo: Assistente Administrativo
+    periodo: "2020 - 2022"
+    itens:
+      - Apoiei a equipe de gestão na elaboração de relatórios mensais.
+      - Organizei o arquivo documental da empresa, reduzindo tempo de busca em 40%.
+      - Participei de treinamentos internos sobre metodologias ágeis.
+
+projetos:
+  - nome: Sistema de Controle de Prazos
+    itens:
+      - Criei planilha automatizada para acompanhamento de prazos e status de projetos.
+      - Ferramenta foi adotada por toda a equipe de projetos da empresa.
+
+formacao:
+  - curso: Bacharelado em Administração
+    instituicao: Universidade Paulista
+    periodo: "2018 - 2022"

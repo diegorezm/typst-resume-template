@@ -1,0 +1,41 @@
+# Currículo com foco em design gráfico e UX.
+cargo_alvo: Designer Gráfico / UI Designer
+resumo: >
+  Designer com foco em identidade visual, interfaces digitais e experiência do usuário.
+  Experiência em projetos de branding, aplicativos e materiais impressos para clientes
+  de diferentes segmentos.
+
+habilidades:
+  - Figma
+  - Adobe Illustrator e Photoshop
+  - Identidade visual e branding
+  - Design de interfaces (UI/UX)
+  - Tipografia e hierarquia visual
+  - Prototipação e testes de usabilidade
+
+experiencias:
+  - empresa: Estúdio Visual
+    cargo: Designer Gráfico
+    periodo: "2022 - Atual"
+    itens:
+      - Desenvolvi identidades visuais completas para 15 marcas de pequeno e médio porte.
+      - Criei interfaces para aplicativos mobile no Figma, reduzindo atrito em fluxos principais.
+      - Colaborei com equipe de marketing na produção de materiais para campanhas digitais.
+
+  - empresa: Freelancer
+    cargo: Designer Independente
+    periodo: "2020 - 2022"
+    itens:
+      - Atendi clientes de diferentes segmentos com entregas de logotipo, apresentações e materiais impressos.
+      - Construí repositório de templates reutilizáveis que reduziram tempo de entrega em 25%.
+
+projetos:
+  - nome: Redesign de App de Delivery
+    itens:
+      - Conduzi pesquisa com usuários e mapeei os principais pontos de abandono no checkout.
+      - Propus novo fluxo de compra que reduziu etapas de 7 para 4 passos.
+
+formacao:
+  - curso: Tecnólogo em Design Gráfico
+    instituicao: Escola de Artes Aplicadas
+    periodo: "2018 - 2020"

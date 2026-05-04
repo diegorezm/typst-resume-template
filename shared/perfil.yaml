@@ -1,0 +1,17 @@
+# Informações pessoais compartilhadas entre todos os currículos.
+# Edite apenas este arquivo para atualizar seus dados em todos os currículos.
+
+nome: João Silva
+titulo: Profissional
+email: joao.silva@exemplo.com
+telefone: "+55 11 98765-4321"
+local: "São Paulo, SP"
+website:
+  rotulo: "joaosilva.com.br"
+  url: "https://joaosilva.com.br"
+github:
+  rotulo: "github.com/joaosilva"
+  url: "https://github.com/joaosilva"
+linkedin:
+  rotulo: "linkedin.com/in/joaosilva"
+  url: "https://linkedin.com/in/joaosilva"
