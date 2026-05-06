@@ -11,26 +11,24 @@
     margin: (x: 1.4cm, y: 1.2cm),
   )
   set text(
-    font: "Arial",
+  font: "Libertinus Sans",
     size: 10pt,
-    lang: "en",
+    lang: "pt",
   )
   set par(justify: true, leading: 0.65em)
 
   show link: it => text(fill: link-color)[#it]
 
-  // Section heading style
+show heading.where(level: 1): set block(above: 0.6em, below: 0.6em)
   show heading.where(level: 1): it => [
-    #v(0.3em)
-    #text(size: 11pt, weight: "bold")[#upper(it.body)]
-    #line(length: 100%, stroke: 0.5pt + accent-color)
-    #v(0.3em)
+    #text(weight: "bold", size: 11.5pt)[#upper(it.body)]
+    #line(length: 100%, stroke: 0.4pt + muted-color)
+    #v(0.15em)
   ]
 
-  // Sub-heading style (company, role)
   show heading.where(level: 2): it => [
-    #v(0.2em)
-    #text(size: 10pt, weight: "bold")[#it.body]
+    #v(0.05em)
+    #text(size: 10pt, weight: "semibold")[#it.body]
   ]
 
   body
